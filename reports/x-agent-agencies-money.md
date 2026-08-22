@@ -55,7 +55,7 @@ Rank is “can Isaac take this to the bank,” not tweet volume.
 | 9 | [@lwyzplaza](https://x.com/lwyzplaza) | (b) | Reply: “I run a construction company… saving money + a LOT of time” | His own jobs | **No number** | Unstated | **No.** Vague, existing shop |
 | 10 | [@petergyang](https://x.com/petergyang/status/2089724101070086482) | (c) | Marie Kondo declutter prompt + 5-bot tutorial | Audience / YouTube, not a client | **$0 cash from the bot.** Gives the prompt away | Records the demo | Audience required |
 | 11 | [@AlexFinn](https://x.com/AlexFinn/status/2087642719447609374) | (c) | 5-step “set it up the right way / enjoy the AGI” | Followers | **$0.** Setup thread | None of the work is sold | Audience required |
-| 12 | [@sairahul1](https://archive.ph/Wf7Zl) / [@0xMorlex](https://x.com/0xMorlex/status/2090393908567998493) / [@0xCodez](https://threadnavigator.com/thread/2089676836619878567/) | (c) | “One-person company” / 9-step / 10-step tutorials | Substack / thread engagement | **$0 receipts.** How-to, not a ledger | Human still sells whatever the company is | Audience required |
+| 12 | [@sairahul1](https://archive.ph/Wf7Zl) / [@0xCodez](https://threadnavigator.com/thread/2089676836619878567/) | (c) | “One-person company” / 10-step tutorials | Substack / thread engagement | **$0 receipts.** How-to, not a ledger | Human still sells whatever the company is | Audience required |
 | 13 | Nate Herk, Ruben Hassid, Eddie Chen / Legacy AI | (c) | 20-minute YouTube + Skool / Substack / “get paid in 10 weeks” agency school | Students who already have (or want) an audience | Education revenue, **not** Grok Bot client labor | They film, they sell the community | **No** for Isaac (no list) |
 | 14 | Dennis Yu / BlitzMetrics | (b)+(c) | Public Grok Bot ops desk. “I am not your VA.” Students load *their* Bot | Existing Local Service Spotlight / agency-owner network | He “charges for time, not knowledge.” No Grok-Bot-retainer receipt on X | Teammates install on their own account | **No.** He has a list and a school |
 | 15 | OpenClawPro / DeployAgents | (a) close-mirror | Managed OpenClaw / Hermes hosting; $149 white-label “AI agency” markdown kit | Whoever finds the website | **Listed prices** ($55–219/mo, kit $149). **No X ledger, not Grok Bot** | They install/host. Buyer still needs clients | Website, not this sweep’s evidence |
@@ -111,7 +111,6 @@ This is where the timeline *looks* like an agency boom.
 - [Alex Finn](https://x.com/AlexFinn/status/2087642719447609374): five setup steps, “Enjoy the AGI.” Classic info-product cadence. No client.
 - [Peter Yang](https://x.com/petergyang/status/2089724101070086482): gives the Marie Kondo prompt away; separate 5-bot tutorial.
 - [@sairahul1](https://archive.ph/Wf7Zl): “How To Build a One-Person Company Using Grok Bot.” Save-this-thread. No P&L.
-- [@0xMorlex](https://x.com/0xMorlex/status/2090393908567998493): 9-step roadmap.
 - [@0xCodez](https://threadnavigator.com/thread/2089676836619878567/): 10-step “automate your life,” Substack CTA.
 - Nate Herk: “Build a fleet in 20 minutes” YouTube + Skool “AI Automation Society” ([LinkedIn](https://www.linkedin.com/posts/nateherkelman_build-a-fleet-of-ai-agents-with-grok-bot-activity-7493123400589250561-LrRq)).
 - Ruben Hassid: Substack “How to AI,” 800k readers, Grok Bot review. Education.
@@ -240,7 +239,6 @@ Named X operators
 - [Gergely Orosz — Stripe refunds](https://x.com/GergelyOrosz/status/2090085668768694562) / [unroll](https://www.unrollnow.com/status/2090085668768694562)
 - [Peter Yang — Marie Kondo](https://x.com/petergyang/status/2089724101070086482) / [unroll](https://unrollnow.com/status/2089724101070086482)
 - [Alex Finn — setup thread](https://x.com/AlexFinn/status/2087642719447609374) / [unroll](https://unrollnow.com/status/2087642719447609374)
-- [0xMorlex — 9-step](https://x.com/0xMorlex/status/2090393908567998493)
 - [liam_fallen](https://x.com/liam_fallen) · [elonmusk](https://x.com/elonmusk) · [BrianRoemmele](https://x.com/BrianRoemmele) — [Digg cluster](https://digg.com/tech/knp6947v)
 - [kristaletz](https://x.com/kristaletz) · [darian314](https://x.com/darian314) · [ameatpopsicle](https://x.com/ameatpopsicle) · [startupstella](https://x.com/startupstella) · [lwyzplaza](https://x.com/lwyzplaza) · [waynesutton](https://x.com/waynesutton) · [DannyLimanseta](https://x.com/DannyLimanseta) · [benln](https://x.com/benln)
 
