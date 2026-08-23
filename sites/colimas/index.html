@@ -3,290 +3,303 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#7A1F1F">
-  <meta name="description" content="Colima's Mexican Restaurant, 308 Pier View Way, Oceanside, CA. Preview site.">
-  <title>Colima's Mexican Restaurant — Oceanside, CA</title>
+  <meta name="theme-color" content="#120C0A">
+  <meta name="description" content="Colima’s Mexican Restaurant at 308 Pier View Way, Oceanside, CA. Call (760) 439-4045.">
+  <title>Colima’s Mexican Restaurant — Oceanside, CA</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://gitcuzzi.github.io/cuzzi-jobss/sites/colimas/">
+  <meta property="og:title" content="Colima’s Mexican Restaurant — Oceanside, CA">
+  <meta property="og:description" content="Mexican food on Pier View Way, a short walk from the Oceanside Pier.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/taco-lime.jpg">
+  <link rel="preload" as="image" href="assets/images/taco-lime.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --chile: #7A1F1F;
-      --chile-deep: #4E1212;
-      --terracotta: #C45C26;
-      --gold: #D9A441;
-      --cream: #F6EFE3;
-      --paper: #FFF9F1;
-      --ink: #241610;
-      --muted: #6A5346;
-      --cactus: #2F4A34;
-      --banner: #2B1A12;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: "Source Sans 3", "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--cream);
-      line-height: 1.5;
-    }
-
-    .preview-banner {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: var(--banner);
-      color: #F8E7C7;
-      text-align: center;
-      padding: 0.7rem 1rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-    }
-    .preview-banner strong { color: var(--gold); }
-
-    header.hero {
-      background:
-        linear-gradient(160deg, rgba(78, 18, 18, 0.88), rgba(196, 92, 38, 0.72)),
-        repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 12px, transparent 12px 24px),
-        #7A1F1F;
-      color: #FFF6EA;
-      padding: 2.4rem 1.25rem 2.6rem;
-      text-align: center;
-    }
-    .eyebrow {
-      display: inline-block;
-      border: 1px solid rgba(248, 231, 199, 0.45);
-      border-radius: 999px;
-      padding: 0.2rem 0.7rem;
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-    }
-    h1 {
-      font-family: Fraunces, Georgia, serif;
-      font-size: clamp(2rem, 8vw, 3.2rem);
-      line-height: 1.1;
-      margin: 0 0 0.4rem;
-    }
-    .tagline {
-      margin: 0;
-      font-size: 1.05rem;
-      color: #F3D9B0;
-    }
-
-    main {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 0 1rem 3rem;
-    }
-
-    .actions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.7rem;
-      margin: -1.1rem 0 1.4rem;
-    }
-    .btn {
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 0.85rem;
-      padding: 0.9rem 0.6rem;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .btn-call {
-      background: var(--chile);
-      color: #fff;
-    }
-    .btn-map {
-      background: var(--paper);
-      color: var(--chile);
-      border: 2px solid var(--chile);
-    }
-
-    section {
-      background: var(--paper);
-      border-radius: 1.1rem;
-      padding: 1.2rem 1.15rem 1.3rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 8px 24px rgba(36, 22, 16, 0.06);
-    }
-    h2 {
-      font-family: Fraunces, Georgia, serif;
-      font-size: 1.45rem;
-      margin: 0 0 0.85rem;
-    }
-    p, li { font-size: 1.02rem; }
-    .note {
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin: 0 0 0.8rem;
-    }
-
-    address {
-      font-style: normal;
-    }
-    .contact-line {
-      margin: 0.35rem 0;
-    }
-    .contact-line a {
-      color: var(--chile);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .hours {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .hours li {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 0.45rem 0;
-      border-bottom: 1px solid #E8D8C4;
-    }
-    .hours li:last-child { border-bottom: 0; }
-    .hours .today {
-      font-weight: 700;
-      color: var(--cactus);
-    }
-
-    .menu-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .menu-list li {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid #E8D8C4;
-    }
-    .menu-list li:last-child { border-bottom: 0; }
-    .dish {
-      font-family: Fraunces, Georgia, serif;
-      font-size: 1.12rem;
-      display: block;
-      margin-bottom: 0.15rem;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .chips li {
-      background: #F3E4CF;
-      border-radius: 999px;
-      padding: 0.28rem 0.7rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.88rem;
-      padding: 0 1rem 2rem;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Colima's Mexican Restaurant",
+    "servesCuisine": "Mexican",
+    "telephone": "+1-760-439-4045",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "308 Pier View Way",
+      "addressLocality": "Oceanside",
+      "addressRegion": "CA",
+      "postalCode": "92054",
+      "addressCountry": "US"
+    },
+    "url": "https://gitcuzzi.github.io/cuzzi-jobss/sites/colimas/",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "08:00",
+        "closes": "21:00"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="preview-banner">
-    This is a <strong>preview</strong>. The site goes live when Colima’s subscribes.
+  <a class="skip" href="#menu">Skip to menu</a>
+
+  <div class="preview">
+    Preview — <a href="https://www.paypal.com/invoice/p/#NQBCDNTKDFWH4Y24">pay $349 to go live</a>
   </div>
 
-  <header class="hero">
-    <div class="eyebrow">Oceanside, California</div>
-    <h1>Colima’s Mexican Restaurant</h1>
-    <p class="tagline">Mexican food a short walk from the pier</p>
+  <header class="site-header">
+    <a class="wordmark" href="#top">Colima’s</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-call header-call" href="tel:+17604394045">Call&nbsp;<span class="full-phone">(760) 439-4045</span></a>
   </header>
 
-  <main>
-    <div class="actions">
-      <a class="btn btn-call" href="tel:+17604394045">Call (760) 439-4045</a>
-      <a class="btn btn-map" href="https://maps.google.com/?q=308+Pier+View+Way,+Oceanside,+CA+92054">Get directions</a>
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/images/taco-lime.jpg" alt="" width="1400" height="933">
     </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Oceanside, California</p>
+      <h1>Colima’s<br><em>Mexican Restaurant</em></h1>
+      <p class="hero-sub">308 Pier View Way, a short walk from the pier.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Visit</h2>
-      <address>
-        <p class="contact-line"><strong>308 Pier View Way</strong><br>Oceanside, CA 92054</p>
-        <p class="contact-line"><a href="tel:+17604394045">(760) 439-4045</a></p>
-      </address>
-    </section>
+  <section class="intro">
+    <div class="wrap intro-grid">
+      <div>
+        <p class="intro-kicker">On Pier View Way</p>
+        <p class="lede">Mexican food a short walk from the Oceanside Pier.</p>
+        <p class="lede-note">Breakfast when the doors open. Carne asada, burritos, and quesadillas through the evening — later on Friday and Saturday.</p>
+      </div>
+      <aside class="hours-card" aria-label="Hours and phone">
+        <p class="hours-card-kicker">Open today</p>
+        <p class="hours-card-today" id="open-today">8:00 AM – 9:00 PM</p>
+        <p class="hours-card-phone"><a href="tel:+17604394045">(760) 439-4045</a></p>
+        <p class="hours-card-addr">308 Pier View Way<br>Oceanside, CA 92054</p>
+      </aside>
+    </div>
+  </section>
 
-    <section>
-      <h2>Hours</h2>
-      <p class="note">From public listings. Call ahead on holidays.</p>
-      <ul class="hours">
-        <li data-days="1,2,3,4"><span>Monday – Thursday</span><span>9:00 AM – 9:00 PM</span></li>
-        <li data-days="5,6"><span>Friday – Saturday</span><span>8:00 AM – 11:00 PM</span></li>
-        <li data-days="0"><span>Sunday</span><span>8:00 AM – 9:00 PM</span></li>
-      </ul>
-    </section>
+  <div class="band" aria-hidden="false">
+    <figure>
+      <img src="assets/images/asada.jpg" alt="Street tacos with cilantro, onion, salsa, and lime on a clay platter" width="1400" height="933">
+    </figure>
+    <figure>
+      <img src="assets/images/quesadilla.jpg" alt="Grilled quesadilla wedges with melted cheese and guacamole" width="1400" height="933">
+    </figure>
+    <figure>
+      <img src="assets/images/burrito.jpg" alt="A cut burrito showing grilled meat, cabbage, and cilantro" width="1400" height="933">
+    </figure>
+  </div>
 
-    <section>
-      <h2>Sample dishes</h2>
-      <p class="note">Sample items from public delivery listings — not a full menu. Call to confirm today’s dishes and prices.</p>
-      <ul class="menu-list">
-        <li>
-          <span class="dish">Breakfast Burrito</span>
-          Ham, bacon, or sausage with egg, cheese, and potato in a flour tortilla.
-        </li>
-        <li>
-          <span class="dish">California Burrito</span>
-          Carne asada, french fries, cheese, guacamole, sour cream, and pico de gallo.
-        </li>
-        <li>
-          <span class="dish">Carne Asada Burrito</span>
-          Carne asada with guacamole and pico de gallo.
-        </li>
-        <li>
-          <span class="dish">Carne Asada Fries</span>
-          Fries with carne asada, guacamole, cheese, and pico de gallo.
-        </li>
-        <li>
-          <span class="dish">Supreme Quesadilla</span>
-          Cheese and carne asada with beans, lettuce, sour cream, and pico de gallo.
-        </li>
-      </ul>
-    </section>
+  <section class="section menu" id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Menu</h2>
+        <p class="section-note">Sample items from public delivery listings — not a full in-house menu. Call to confirm today’s dishes and prices.</p>
+      </div>
 
-    <section>
-      <h2>Good to know</h2>
-      <ul class="chips">
-        <li>Takeout</li>
-        <li>Delivery</li>
-        <li>Outdoor dining</li>
-        <li>Pets welcome</li>
-        <li>Apple Pay</li>
-      </ul>
-    </section>
-  </main>
+      <div class="menu-grid">
+        <div class="menu-copy">
+          <div class="menu-block">
+            <h3>Burritos</h3>
+            <ul class="dishes">
+              <li>
+                <span class="dish">Breakfast Burrito</span>
+                <p>Ham, bacon, or sausage with egg, cheese, and potato in a flour tortilla.</p>
+              </li>
+              <li>
+                <span class="dish">California Burrito</span>
+                <p>Carne asada, french fries, cheese, guacamole, sour cream, and pico de gallo.</p>
+              </li>
+              <li>
+                <span class="dish">Carne Asada Burrito</span>
+                <p>Carne asada with guacamole and pico de gallo.</p>
+              </li>
+              <li>
+                <span class="dish">Colimas Burrito</span>
+                <p>Carne asada and fish with lettuce, pico de gallo, guacamole, and mayo.</p>
+              </li>
+              <li>
+                <span class="dish">Chile Relleno Burrito</span>
+                <p>Chile relleno with enchilada sauce, rice, lettuce, cheese, and tomato.</p>
+              </li>
+              <li>
+                <span class="dish">Shrimp Burrito</span>
+                <p>Shrimp cooked with pico de gallo, tomato sauce, bell peppers, and rice.</p>
+              </li>
+            </ul>
+          </div>
 
-  <footer>
-    Colima’s Mexican Restaurant · Oceanside, CA<br>
-    Preview page only. Hours and sample dishes from public listings.
+          <div class="menu-block">
+            <h3>Plates &amp; tacos</h3>
+            <ul class="dishes">
+              <li>
+                <span class="dish">Carne Asada Fries</span>
+                <p>Fries stacked with carne asada, guacamole, cheese, and pico de gallo.</p>
+              </li>
+              <li>
+                <span class="dish">Carne Asada Chips</span>
+                <p>Chips with carne asada, guacamole, cheese, and pico de gallo.</p>
+              </li>
+              <li>
+                <span class="dish">Chimichanga</span>
+                <p>A deep-fried burrito with beans, cheese, sour cream, lettuce, and pico de gallo.</p>
+              </li>
+              <li>
+                <span class="dish">Two Sopes</span>
+                <p>Beef or chicken with beans, lettuce, cheese, and tomatoes.</p>
+              </li>
+              <li>
+                <span class="dish">Supreme Quesadilla</span>
+                <p>Cheese and carne asada with beans, lettuce, sour cream, and pico de gallo.</p>
+              </li>
+              <li>
+                <span class="dish">Carne Asada Taco</span>
+                <p>Soft corn tortilla with carne asada, guacamole, and salsa.</p>
+              </li>
+              <li>
+                <span class="dish">Fish Taco</span>
+                <p>Soft corn tortilla with fish, lettuce, salsa, and mayo.</p>
+              </li>
+              <li>
+                <span class="dish">Rolled Tacos</span>
+                <p>Crispy rolled tacos with guacamole, cheese, lettuce, and tomato.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="menu-visual">
+          <img src="assets/images/tacos-cilantro.jpg" alt="Close-up of corn tortillas filled with shredded meat, onion, and cilantro" width="1400" height="933">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>From the table</h2>
+        <p class="section-note">Burritos, tacos, quesadillas, and plates — the kind of table you come to Pier View Way for.</p>
+      </div>
+      <div class="gallery">
+        <figure class="wide">
+          <img src="assets/images/table.jpg" alt="Tacos, guacamole in a molcajete, and salsas on painted tile" width="1600" height="1067">
+        </figure>
+        <figure>
+          <img src="assets/images/nachos.jpg" alt="Street tacos with cilantro, onion, radish, and lime" width="1400" height="933">
+        </figure>
+        <figure class="tall">
+          <img src="assets/images/salsa.jpg" alt="Loaded nachos with pico de gallo, jalapeño, and crema" width="1400" height="933">
+        </figure>
+        <figure>
+          <img src="assets/images/tacos-plate.jpg" alt="Shrimp tacos with avocado and crema" width="1400" height="933">
+        </figure>
+        <figure>
+          <img src="assets/images/bowl.jpg" alt="A plate of cheese nachos with pico de gallo" width="1400" height="933">
+        </figure>
+        <figure>
+          <img src="assets/images/chips.jpg" alt="Rice plate with guacamole and tortilla chips" width="1400" height="933">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Come by</h2>
+        <p class="section-note">Downtown Oceanside, on Pier View Way.</p>
+      </div>
+
+      <div class="visit-grid">
+        <div class="panel">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li data-days="1,2,3,4"><span>Monday – Thursday</span><span>9:00 AM – 9:00 PM</span></li>
+            <li data-days="5,6"><span>Friday – Saturday</span><span>8:00 AM – 11:00 PM</span></li>
+            <li data-days="0"><span>Sunday</span><span>8:00 AM – 9:00 PM</span></li>
+          </ul>
+          <p class="hours-note">Hours from public listings. Call ahead on holidays.</p>
+
+          <h3 class="spaced">Visit</h3>
+          <address class="address-block">
+            <p>
+              <strong>308 Pier View Way</strong><br>
+              Oceanside, CA 92054
+            </p>
+            <p><a href="tel:+17604394045">(760) 439-4045</a></p>
+          </address>
+          <div class="visit-actions">
+            <a class="btn btn-call" href="tel:+17604394045">Call the restaurant</a>
+            <a class="btn btn-ghost" href="https://maps.google.com/?q=308+Pier+View+Way,+Oceanside,+CA+92054">Get directions</a>
+          </div>
+          <ul class="amenities">
+            <li>Takeout</li>
+            <li>Delivery</li>
+            <li>Outdoor dining</li>
+            <li>Pets welcome</li>
+            <li>Apple Pay</li>
+            <li>Contactless payments</li>
+          </ul>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Map of Colima’s Mexican Restaurant at 308 Pier View Way, Oceanside"
+            src="https://maps.google.com/maps?q=308+Pier+View+Way,+Oceanside,+CA+92054&amp;z=16&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <figure class="place-photo">
+        <img src="assets/images/oceanside-pier.jpg" alt="Sunset at the Oceanside Pier" width="1920" height="863">
+        <figcaption>The Oceanside Pier, a short walk from Pier View Way. Photo: Jot Powers, Wikimedia Commons, CC BY-SA 2.0.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="footer-name">Colima’s Mexican Restaurant</p>
+    <p>308 Pier View Way, Oceanside, CA 92054<br>
+      <a href="tel:+17604394045">(760) 439-4045</a>
+    </p>
+    <p class="credit">
+      Food photographs from Unsplash, used to show the kind of cooking — not photos from inside this restaurant.<br>
+      Oceanside Pier photo by Jot Powers via Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.
+    </p>
   </footer>
 
-  <script>
-    (function () {
-      var today = new Date().getDay();
-      document.querySelectorAll(".hours li").forEach(function (row) {
-        var days = (row.getAttribute("data-days") || "").split(",");
-        if (days.indexOf(String(today)) !== -1) {
-          row.classList.add("today");
-        }
-      });
-    })();
-  </script>
+  <div class="mobile-bar">
+    <a class="btn btn-call" href="tel:+17604394045">Call</a>
+    <a class="btn btn-solid" href="https://maps.google.com/?q=308+Pier+View+Way,+Oceanside,+CA+92054">Directions</a>
+  </div>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>
